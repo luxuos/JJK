@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+<link href="style.css" rel="stylesheet">
+<link rel="icon" href="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRUpofTA447eGobuPuQV-ntKgibDe8dSslYJM8PwCbQUQyBAps8">
+<div class="video-container">
+  <iframe class="caca"
+    src="https://www.youtube.com/embed/yesL7eix_Hk?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0"
+    allow="autoplay"
+    allowfullscreen>
+  </iframe>
+  <div class="overlay"></div>
+</div>
+
+<script>
+// ⏱️ durée de la vidéo en secondes (À MODIFIER)
+let duree = 47; // exemple : 2 minutes
+
+setTimeout(() => {
+  window.location.href = "JJK.html";
+}, duree * 1000);
+</script>
+
+<div id="player"></div>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+let player;
+let fadeStarted = false;
+
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('player', {
+    videoId: '5yb2N3pnztU',
+    width: 1,
+    height: 1,
+    playerVars: {
+      autoplay: 1,
+      controls: 1,
+      modestbranding: 1,
+      rel: 0
+    },
+    events: {
+      onReady: onPlayerReady
+    }
+  });
+}
+
+function onPlayerReady(event) {
+  player.setVolume(100); // volume max
+  player.playVideo();
+
+  // Vérifie chaque 200ms si on doit commencer le fade
+  let checkFade = setInterval(() => {
+    if (!fadeStarted) {
+      let currentTime = player.getCurrentTime();
+      let fadeStartTime = 47 - 12; // fade commence à 37s
+
+      if (currentTime >= fadeStartTime) {
+        fadeStarted = true;
+        fadeOut();
+        clearInterval(checkFade);
+      }
+    }
+  }, 200);
+}
+
+// Fonction pour diminuer progressivement le volume
+function fadeOut() {
+  let fadeInterval = setInterval(() => {
+    let volume = player.getVolume();
+    if (volume > 0) {
+      volume -= 2.5; // vitesse du fade (ajuster si trop rapide)
+      if (volume < 0) volume = 0;
+      player.setVolume(volume);
+    } else {
+      clearInterval(fadeInterval);
+    }
+  }, 200); // intervalle pour le fade
+}
+</script>
+</head>
+</html>

@@ -1,0 +1,88 @@
+.jjk {
+  display: inline-block;
+  width: 15vw; 
+  box-shadow:
+    0 0 20px 10px #ff0000,
+    0 0 40px 20px #ff0000,
+    inset 0 0 15px 5px #ff0000;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+
+.jjk:hover {
+  box-shadow:
+    0 0 30px 15px #ff0000,
+    0 0 60px 30px #ff0000,
+    inset 0 0 20px 8px #ff0000;
+}
+
+#navbar {
+	left: 0;
+  background-image: url("https://static.wikia.nocookie.net/jujutsu-kaisen/images/c/c6/Geto_explaining_the_best_chance_to_counter_Gojo_%28Anime%29.png/revision/latest/scale-to-width-down/1000?cb=20201108042057");
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-size: 185%; 
+  background-position: 50% 28%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;           
+  justify-content: center; 
+  align-items: center;   
+  transition: top 0.2s;
+}
+
+#navbar a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  opacity: 0.5;
+  color: black;
+  
+}
+
+.caca {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16/9;
+}
+
+.video-container iframe {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;   
+  height: 100vh;  
+  border: none;
+}
+
+/* bloque les clics */
+.overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  pointer-events: all; 
+  z-index: 9999;
+}
+
+
