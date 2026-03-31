@@ -140,4 +140,90 @@
   z-index: 9999;
 }
 
+#navbar1 {
+	left: 0;
+  background-image: url("https://static.wikia.nocookie.net/jigokuraku/images/9/96/Rien_Yang_Infobox_%28Anime%29.png/revision/latest/scale-to-width-down/1000?cb=20260125174343");
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-size: 185%; 
+  background-position: 50% 31.5%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;           
+  justify-content: center; 
+  align-items: strecth;   
+  transition: top 0.2s;
+}
+
+#navbar1 a {
+  display: flex;
+  align-items: center;
+   justify-content: center;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.dropdown1 {
+    position: relative;
+	
+}
+
+.dropdown1 .dropbtn1 {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  
+}
+
+#navbar1 a:hover, .dropdown1:hover .dropbtn1, .dropbtn1:focus {
+ background-color: #ddd;
+  opacity: 0.5;
+  color: black;
+  
+}
+
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  top: 100%;         /* juste sous la navbar */
+  left: 0;           /* aligné à gauche de la navbar */
+  width: 100%;       /* 🔹 prend toute la largeur du parent (navbar) */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+  /* Image de fond */
+  background-image: url("https://i.redd.it/anime-vs-manga-yujis-rage-v0-bvv7z0u4j1661.png?width=1280&format=png&auto=webp&s=c6de0e991066836c5d9baba705a07b9dbcd8bb31");
+  background-size: cover ;       /* 🔹 l’image prend toute la boîte */
+  background-position: 50% 50%;  /* 🔹 centrée */
+  background-repeat: no-repeat; /* 🔹 pas de répétition */
+}
+
+.dropdown-content1 a {
+  float: none;
+  color: red;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content1 a:hover {
+  background-color: #ddd;
+}
+
+.show1 {
+  display: block;
+}
 

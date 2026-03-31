@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head><meta http-equiv="Content-Type" content="text/html" charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="https://static.wikia.nocookie.net/jigokuraku/images/4/4a/Site-favicon.ico/revision/latest?cb=20230704160446">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="style.css" rel="stylesheet">
+<div id="navbar1">
+  <a href="hell's paradise.html">Home</a>
+  <div class="dropdown1">
+  <button class="dropbtn1" onclick="myFunction()">Other pages
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content1" id="myDropdown1">
+    <a href="JJK.html" style="color: red">Jujutsu Kaisen</a>
+  </div>
+  </div> 
+</div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown1").classList.toggle("show1");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn1')) {
+  var myDropdown = document.getElementById("myDropdown1");
+    if (myDropdown.classList.contains('show1')) {
+      myDropdown.classList.remove('show1');
+    }
+  }
+}
+</script>
+
+<div style="padding:1px;font-size:30px;margin-top:80px;">
+</div>
+
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar1").style.top = "0";
+  } else {
+    document.getElementById("navbar1").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+
+<title>Hells' Paradise</title>
+</head>
+
+<body styl="background-image:url('image.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: cover"> 
+
+		<center><h1 style="color:red">Hell's Paradise</h1>
+		<br></br>
+		<p style="color:red"><b>ATTENTION: THIS SITE IS NOT READY YET AND IS STILL IN PRODUCTION!</b></p>
+		<p>We are still brainstorming on what to put on this website thank you for your understanding.</p>
+		<img src="https://animerants.net/wp-content/uploads/2026/02/hells-paradise-second-season-episode-05-gabimaru-1.png?w=1024">
+
+
+</body>
+</html>
