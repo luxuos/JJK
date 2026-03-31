@@ -1,15 +1,42 @@
 <!DOCTYPE html>
 <head>
+
 <meta charset="UTF-8">
-<link rel="icon" href="https://i.ebayimg.com/images/g/wrYAAOSwbGdlMHW4/s-l1200.png">
+<link rel="icon" href="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYG5_BYgvWXbFmxJuZTmnribUWDomTsTQrZxTtNxNC7nwlIX9K">
 
     <title>Colony</title>
 	<link href="style.css" rel="stylesheet">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 	<div id="navbar">
   <a href="JJK.html">Home</a>
   <a href="Colony.html">Colony</a>
-  <a href="#contact">Fights</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Other pages
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="hell's paradise.html" style="color: #800a7c">Hell's Paradise</a>
+  </div>
+  </div> 
 </div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
 
 <div style="padding:1px;font-size:30px;margin-top:80px;">
 </div>
@@ -134,7 +161,7 @@ window.onscroll = function() {
 				
 		</tr>
 			
-		<tr>
+		<tr>h2
 			
 			<td style="background-color:lightgray" border="white"><center><img src="https://static.wikia.nocookie.net/jujutsu-kaisen/images/4/4f/KenjakuP.png/revision/latest?cb=20231029170848" style="width: 15vw"> <br>Kenjaku</br> </td> </center>
 			<td style="background-color:lightgray" border="white"><center><img src="https://static.wikia.nocookie.net/jujutsu-kaisen/images/9/97/LakeGoshoPlayerP.png/revision/latest?cb=20240729002304" style="width: 15vw"><br>Unnamed</br></td></center>

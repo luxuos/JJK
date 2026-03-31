@@ -68,7 +68,7 @@ function fadeOut() {
   let fadeInterval = setInterval(() => {
     let volume = player.getVolume();
     if (volume > 0) {
-      volume -= 2.5; // vitesse du fade (ajuster si trop rapide)
+      volume -= 1.825; // vitesse du fade (ajuster si trop rapide)
       if (volume < 0) volume = 0;
       player.setVolume(volume);
     } else {
